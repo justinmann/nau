@@ -6,7 +6,7 @@
         {
             "label": "sjc",
             "type": "shell",
-            "command": "../sj/sjc nau.sj --no-lines",
+            "command": "../sj/sjc main.sj --no-lines",
             "promptOnClose": true,
             "group": "build",
             "presentation": {
@@ -22,7 +22,7 @@
         {
             "label": "gcc",
             "type": "shell",
-            "command": "gcc -g nau.c -I. -I/mingw64/include/freetype2 -DWIN32 -llibpng16 -lopengl32 -lfreetype -lglew32 `sdl2-config --cflags --libs`",
+            "command": "gcc -g main.c -I. -I/mingw64/include/freetype2 -DWIN32 -llibpng16 -lopengl32 -lfreetype -lglew32 `sdl2-config --cflags --libs` -o ${workspaceFolderBasename}.exe",
             "dependsOn" : "sjc",
             "group": {
                 "kind": "build",
