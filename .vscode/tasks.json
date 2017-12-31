@@ -22,7 +22,7 @@
         {
             "label": "gcc",
             "type": "shell",
-            "command": "gcc -g main.c -I. -I/mingw64/include/freetype2 -DWIN32 -llibpng16 -lopengl32 -lfreetype -lglew32 `sdl2-config --cflags --libs` -o ${workspaceFolderBasename}.exe",
+            "command": "gcc -g main.c -I. -I/mingw64/include/freetype2 -I/mingw64/include/SDL2 -L/mingw64/lib -Dmain=SDL_main -DWIN32 -lmingw32 -lSDL2main -lSDL2 -llibpng16 -lopengl32 -lfreetype -lglew32 -o ${workspaceFolderBasename}.exe",
             "dependsOn" : "sjc",
             "group": {
                 "kind": "build",
