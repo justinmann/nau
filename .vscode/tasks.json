@@ -6,7 +6,7 @@
         {
             "label": "sjc",
             "type": "shell",
-            "command": "../sj/sjc.exe nau.sj",
+            "command": "../sj/sjc nau.sj --no-lines",
             "promptOnClose": true,
             "group": "build",
             "presentation": {
@@ -22,7 +22,7 @@
         {
             "label": "gcc",
             "type": "shell",
-            "command": "gcc -g nau.c -I. -I../glew-2.1.0/include -I../freetype-2.8.1/include -I../sdl/include -I../libpng-1.6.34 -DWIN32 ../freetype-2.8.1/objs/freetype.a -L../glew-2.1.0/lib/Release/Win32 -L../libpng-1.6.34/projects/vstudio/Debug -L../sdl/lib -lglew32s -llibpng16 -lopengl32 -lsdl2",
+            "command": "gcc -g nau.c -I. -I/mingw64/include/freetype2 -DWIN32 -llibpng16 -lopengl32 -lfreetype -lglew32 `sdl2-config --cflags --libs`",
             "dependsOn" : "sjc",
             "group": {
                 "kind": "build",
