@@ -1,0 +1,36 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "sjc",
+            "type": "shell",
+            "command": "../sj/sjc.exe nau.sj",
+            "promptOnClose": true,
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "gcc",
+            "type": "shell",
+            "command": "gcc -g nau.c -I. -I../glew-2.1.0/include -I../freetype-2.8.1/include -I../sdl/include -I../libpng-1.6.34 -DWIN32 ../freetype-2.8.1/objs/freetype.a -L../glew-2.1.0/lib/Release/Win32 -L../libpng-1.6.34/projects/vstudio/Debug -L../sdl/lib -lglew32s -llibpng16 -lopengl32 -lsdl2",
+            "dependsOn" : "sjc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}
