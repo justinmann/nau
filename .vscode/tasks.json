@@ -34,6 +34,26 @@
             "problemMatcher": [
                 "$gcc"
             ]
+        },
+        {
+            "label": "emcc",
+            "type": "shell",
+            "command": "emcc -g main.c -o ${workspaceFolderBasename}.html -I. -s USE_SDL=2 -s USE_FREETYPE=1 -s USE_LIBPNG=1 -s USE_WEBGL2=1 --preload-file assets --preload-file shaders",
+            "dependsOn" : "sjc",
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "emrun",
+            "type": "shell",
+            "command": "emcc -g main.c -o ${workspaceFolderBasename}.html -I. -s USE_SDL=2 -s USE_FREETYPE=1 -s USE_LIBPNG=1 -s USE_WEBGL2=1 --preload-file assets --preload-file shaders --emrun && emrun ${workspaceFolderBasename}.html",
+            "dependsOn" : "sjc",
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
         }
     ]
 }
