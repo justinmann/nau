@@ -32,7 +32,7 @@ fieldScene = heap nauScene3dElement(
     lookAtMax := vec3(16.0f, 1.0f, 6.0f)
     children: [
         heap model(
-            texture : texture_fromPng("assets/clouds.png")
+            texture : texture_fromPng("assets/images/clouds.png")
             shader : phongTextureShader
             model : mat4_translate(vec3(0.0f, 8.0f, 20.0f)) * mat4_scale(12.0f, 12.0f, 12.0f)
             vertexBuffer : planeVertexBuffer(x0 : -6.3f, y0 : -1.0f, x1 : 6.3f, y1 : 1.0f) 
@@ -40,14 +40,14 @@ fieldScene = heap nauScene3dElement(
 
         heap leafPanel(
             textures : [
-                texture_fromPng("assets/whitestar1.png")
-                texture_fromPng("assets/whitestar2.png")
-                texture_fromPng("assets/whitestar1.png")
-                texture_fromPng("assets/whitestar2.png")
-                texture_fromPng("assets/whitestar1.png")
-                texture_fromPng("assets/whitestar2.png")
-                texture_fromPng("assets/whitestar1.png")
-                texture_fromPng("assets/whitestar2.png")
+                texture_fromPng("assets/images/whitestar1.png")
+                texture_fromPng("assets/images/whitestar2.png")
+                texture_fromPng("assets/images/whitestar1.png")
+                texture_fromPng("assets/images/whitestar2.png")
+                texture_fromPng("assets/images/whitestar1.png")
+                texture_fromPng("assets/images/whitestar2.png")
+                texture_fromPng("assets/images/whitestar1.png")
+                texture_fromPng("assets/images/whitestar2.png")
             ]
         ) as #model
 
@@ -64,7 +64,7 @@ fieldScene = heap nauScene3dElement(
                             id : valid("person1")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson1.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson1.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -80,7 +80,7 @@ fieldScene = heap nauScene3dElement(
                             id : valid("person2")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson2.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson2.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -96,7 +96,7 @@ fieldScene = heap nauScene3dElement(
                             id : valid("person3")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson3.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson3.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -112,7 +112,7 @@ fieldScene = heap nauScene3dElement(
                             id : valid("person4")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson4.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson4.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -128,7 +128,7 @@ fieldScene = heap nauScene3dElement(
                             id : valid("person5")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson5.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson5.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -144,7 +144,7 @@ fieldScene = heap nauScene3dElement(
                             id : valid("person6")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson6.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson6.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -160,7 +160,7 @@ fieldScene = heap nauScene3dElement(
                             id : valid("person7")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson7.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson7.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -176,7 +176,7 @@ fieldScene = heap nauScene3dElement(
                             id : valid("person8")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson8.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson8.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -189,7 +189,7 @@ fieldScene = heap nauScene3dElement(
             children : [
                 heap model(
                     id : valid("grass6.2")
-                    texture : texture_fromPng("assets/grass.png")
+                    texture : texture_fromPng("assets/images/grass.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(-8.6f, 0.0f, 6.2f)) * mat4_scale(2.0f, 2.0f, 2.0f)
                     vertexBuffer : planeVertexBuffer(x0 : -4.3f, y0 : -1.0f, x1 : 4.3f, y1 : 1.0f) 
@@ -199,7 +199,7 @@ fieldScene = heap nauScene3dElement(
 
                 heap model(
                     id : valid("grass6.2")
-                    texture : texture_fromPng("assets/grass.png")
+                    texture : texture_fromPng("assets/images/grass.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(8.6f, 0.0f, 6.2f)) * mat4_scale(2.0f, 2.0f, 2.0f)
                     vertexBuffer : planeVertexBuffer(x0 : -4.3f, y0 : -1.0f, x1 : 4.3f, y1 : 1.0f) 
@@ -208,7 +208,7 @@ fieldScene = heap nauScene3dElement(
 
                 heap model(
                     id : valid("grass4.2")
-                    texture : texture_fromPng("assets/grass.png")
+                    texture : texture_fromPng("assets/images/grass.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(-8.6f, 0.0f, 4.2f)) * mat4_scale(2.0f, 2.0f, 2.0f)
                     vertexBuffer : planeVertexBuffer(x0 : -4.3f, y0 : -1.0f, x1 : 4.3f, y1 : 1.0f) 
@@ -217,7 +217,7 @@ fieldScene = heap nauScene3dElement(
 
                 heap model(
                     id : valid("grass4.2")
-                    texture : texture_fromPng("assets/grass.png")
+                    texture : texture_fromPng("assets/images/grass.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(8.6f, 0.0f, 4.2f)) * mat4_scale(2.0f, 2.0f, 2.0f)
                     vertexBuffer : planeVertexBuffer(x0 : -4.3f, y0 : -1.0f, x1 : 4.3f, y1 : 1.0f) 
@@ -226,7 +226,7 @@ fieldScene = heap nauScene3dElement(
 
                 heap model(
                     id : valid("grass2.2")
-                    texture : texture_fromPng("assets/grass.png")
+                    texture : texture_fromPng("assets/images/grass.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(-9.6f, 0.0f, 2.2f)) * mat4_scale(2.0f, 2.0f, 2.0f)
                     vertexBuffer : planeVertexBuffer(x0 : -4.3f, y0 : -1.0f, x1 : 4.3f, y1 : 1.0f) 
@@ -235,7 +235,7 @@ fieldScene = heap nauScene3dElement(
 
                 heap model(
                     id : valid("grass2.2")
-                    texture : texture_fromPng("assets/grass.png")
+                    texture : texture_fromPng("assets/images/grass.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(7.6f, 0.0f, 2.2f)) * mat4_scale(2.0f, 2.0f, 2.0f)
                     vertexBuffer : planeVertexBuffer(x0 : -4.3f, y0 : -1.0f, x1 : 4.3f, y1 : 1.0f) 
@@ -244,7 +244,7 @@ fieldScene = heap nauScene3dElement(
 
                 heap model(
                     id : valid("grass0.2")
-                    texture : texture_fromPng("assets/grass.png")
+                    texture : texture_fromPng("assets/images/grass.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(-10.6f, 0.0f, 0.2f)) * mat4_scale(2.0f, 2.0f, 2.0f)
                     vertexBuffer : planeVertexBuffer(x0 : -4.3f, y0 : -1.0f, x1 : 4.3f, y1 : 1.0f) 
@@ -253,7 +253,7 @@ fieldScene = heap nauScene3dElement(
 
                 heap model(
                     id : valid("grass0.2")
-                    texture : texture_fromPng("assets/grass.png")
+                    texture : texture_fromPng("assets/images/grass.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(6.6f, 0.0f, 0.2f)) * mat4_scale(2.0f, 2.0f, 2.0f)
                     vertexBuffer : planeVertexBuffer(x0 : -4.3f, y0 : -1.0f, x1 : 4.3f, y1 : 1.0f) 
@@ -262,7 +262,7 @@ fieldScene = heap nauScene3dElement(
 
                 heap model(
                     id : valid("grass-1.8")
-                    texture : texture_fromPng("assets/grass.png")
+                    texture : texture_fromPng("assets/images/grass.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(-8.6f, 0.0f, -1.8f)) * mat4_scale(2.0f, 2.0f, 2.0f)
                     vertexBuffer : planeVertexBuffer(x0 : -4.3f, y0 : -1.0f, x1 : 4.3f, y1 : 1.0f) 
@@ -271,7 +271,7 @@ fieldScene = heap nauScene3dElement(
 
                 heap model(
                     id : valid("grass-1.8")
-                    texture : texture_fromPng("assets/grass.png")
+                    texture : texture_fromPng("assets/images/grass.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(8.6f, 0.0f, -1.8f)) * mat4_scale(2.0f, 2.0f, 2.0f)
                     vertexBuffer : planeVertexBuffer(x0 : -4.3f, y0 : -1.0f, x1 : 4.3f, y1 : 1.0f) 

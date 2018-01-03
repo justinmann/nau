@@ -32,7 +32,7 @@ forestScene = heap nauScene3dElement(
     lookAtMax := vec3(16.0f, 1.0f, 6.0f)
     children: [
         heap model(
-            texture : texture_fromPng("assets/forest_backdrop.png")
+            texture : texture_fromPng("assets/images/forest_backdrop.png")
             shader : phongTextureShader
             model : mat4_translate(vec3(0.0f, 8.0f, 20.0f)) * mat4_scale(12.0f, 12.0f, 12.0f)
             vertexBuffer : planeVertexBuffer(x0 : -6.3f, y0 : -1.0f, x1 : 6.3f, y1 : 1.0f) 
@@ -40,13 +40,13 @@ forestScene = heap nauScene3dElement(
 
         heap leafPanel(
             textures : [
-                texture_fromPng("assets/leaf11.png")
-                texture_fromPng("assets/leaf12.png")
-                texture_fromPng("assets/leaf13.png")
-                texture_fromPng("assets/leaf11.png")
-                texture_fromPng("assets/leaf11.png")
-                texture_fromPng("assets/leaf12.png")
-                texture_fromPng("assets/leaf13.png")
+                texture_fromPng("assets/images/leaf11.png")
+                texture_fromPng("assets/images/leaf12.png")
+                texture_fromPng("assets/images/leaf13.png")
+                texture_fromPng("assets/images/leaf11.png")
+                texture_fromPng("assets/images/leaf11.png")
+                texture_fromPng("assets/images/leaf12.png")
+                texture_fromPng("assets/images/leaf13.png")
             ]
         ) as #model
 
@@ -63,7 +63,7 @@ forestScene = heap nauScene3dElement(
                             id : valid("forest_person1")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson1.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson1.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -79,7 +79,7 @@ forestScene = heap nauScene3dElement(
                             id : valid("forest_person2")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson2.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson2.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -95,7 +95,7 @@ forestScene = heap nauScene3dElement(
                             id : valid("forest_person3")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson3.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson3.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -111,7 +111,7 @@ forestScene = heap nauScene3dElement(
                             id : valid("forest_person4")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson4.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson4.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -127,7 +127,7 @@ forestScene = heap nauScene3dElement(
                             id : valid("forest_person5")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson5.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson5.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -143,7 +143,7 @@ forestScene = heap nauScene3dElement(
                             id : valid("forest_person6")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson6.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson6.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -159,7 +159,7 @@ forestScene = heap nauScene3dElement(
                             id : valid("forest_person7")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson7.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson7.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -175,7 +175,7 @@ forestScene = heap nauScene3dElement(
                             id : valid("forest_person8")
                         ) as #element
                         heap imageElement(
-                            image : image(texture : texture_fromPng("assets/forestperson8.png"))
+                            image : image(texture : texture_fromPng("assets/images/forestperson8.png"))
                             stretch : imageStretch.aspectRatio
                         ) as #element
                     ]
@@ -184,7 +184,7 @@ forestScene = heap nauScene3dElement(
         ) as #model
 
         heap model(
-            texture : texture_fromPng("assets/floor.png")
+            texture : texture_fromPng("assets/images/floor.png")
             shader : phongTextureShader
             model : mat4_translate(vec3(0.0f, -2.3f, 0.0f)) *  mat4_scale(40.0f, 40.0f, 40.0f) * mat4_rotate(90.0f, vec3(1.0f, 0.0f, 0.0f))
             vertexBuffer : planeVertexBuffer() 
@@ -194,7 +194,7 @@ forestScene = heap nauScene3dElement(
             model : mat4_translate(vec3(0.0f, -1.3f, 0.0f))
             children : [
                 heap model(
-                    texture : texture_fromPng("assets/tree1.png")
+                    texture : texture_fromPng("assets/images/tree1.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(0.0f, 0.0f, 0.6f))
                     vertexBuffer : planeVertexBuffer(y1 : 6.0f) 
@@ -202,7 +202,7 @@ forestScene = heap nauScene3dElement(
                 ) as #model
 
                 heap model(
-                    texture : texture_fromPng("assets/tree3.png")
+                    texture : texture_fromPng("assets/images/tree3.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(-2.0f, 0.0f, 2.3f))
                     vertexBuffer : planeVertexBuffer(y1 : 7.34f) 
@@ -210,7 +210,7 @@ forestScene = heap nauScene3dElement(
                 ) as #model
 
                 heap model(
-                    texture : texture_fromPng("assets/tree4.png")
+                    texture : texture_fromPng("assets/images/tree4.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(-8.0f, 0.0f, 3.4f))
                     vertexBuffer : planeVertexBuffer(y1 : 9.18f) 
@@ -218,7 +218,7 @@ forestScene = heap nauScene3dElement(
                 ) as #model
 
                 heap model(
-                    texture : texture_fromPng("assets/tree3.png")
+                    texture : texture_fromPng("assets/images/tree3.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(9.0f, 0.0f, 2.3f))
                     vertexBuffer : planeVertexBuffer(y1 : 7.34f) 
@@ -226,7 +226,7 @@ forestScene = heap nauScene3dElement(
                 ) as #model
 
                 heap model(
-                    texture : texture_fromPng("assets/tree2.png")
+                    texture : texture_fromPng("assets/images/tree2.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(-6.0f, 0.0f, 5.1f))
                     vertexBuffer : planeVertexBuffer(y1 : 7.0f) 
@@ -234,7 +234,7 @@ forestScene = heap nauScene3dElement(
                 ) as #model
 
                 heap model(
-                    texture : texture_fromPng("assets/tree3.png")
+                    texture : texture_fromPng("assets/images/tree3.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(-7.5f, 0.0f, 6.3f))
                     vertexBuffer : planeVertexBuffer(y1 : 7.34f) 
@@ -242,7 +242,7 @@ forestScene = heap nauScene3dElement(
                 ) as #model
 
                 heap model(
-                    texture : texture_fromPng("assets/tree4.png")
+                    texture : texture_fromPng("assets/images/tree4.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(0.0f, 0.0f, 7.4f))
                     vertexBuffer : planeVertexBuffer(y1 : 9.18f) 
@@ -250,7 +250,7 @@ forestScene = heap nauScene3dElement(
                 ) as #model
 
                 heap model(
-                    texture : texture_fromPng("assets/tree2.png")
+                    texture : texture_fromPng("assets/images/tree2.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(-7.5f, 0.0f, 5.1f))
                     vertexBuffer : planeVertexBuffer(y1 : 7.0f) 
@@ -258,7 +258,7 @@ forestScene = heap nauScene3dElement(
                 ) as #model
                 
                 heap model(
-                    texture : texture_fromPng("assets/tree2.png")
+                    texture : texture_fromPng("assets/images/tree2.png")
                     shader : phongTextureShader
                     model : mat4_translate(vec3(-10.5f, 0.0f, 5.6f))
                     vertexBuffer : planeVertexBuffer(y1 : 7.0f) 

@@ -38,7 +38,7 @@
         {
             "label": "emcc",
             "type": "shell",
-            "command": "emcc -g main.c -o ${workspaceFolderBasename}.html -I. -s USE_SDL=2 -s USE_FREETYPE=1 -s USE_LIBPNG=1 -s USE_WEBGL2=1 --preload-file assets --preload-file shaders",
+            "command": "emcc -g main.c -o ${workspaceFolderBasename}.html -I. -s USE_SDL=2 -s USE_FREETYPE=1 -s USE_LIBPNG=1 -s USE_WEBGL2=1 --preload-file assets",
             "dependsOn" : "sjc",
             "group": "build",
             "problemMatcher": [
@@ -48,7 +48,7 @@
         {
             "label": "emrun",
             "type": "shell",
-            "command": "emcc -g main.c -o ${workspaceFolderBasename}.html -I. -s USE_SDL=2 -s USE_FREETYPE=1 -s USE_LIBPNG=1 -s USE_WEBGL2=1 --preload-file assets --preload-file shaders --emrun && emrun ${workspaceFolderBasename}.html",
+            "command": "emcc -g main.c -o ${workspaceFolderBasename}.html -I. -s USE_SDL=2 -s USE_FREETYPE=1 -s USE_LIBPNG=1 -s USE_WEBGL2=1 --preload-file assets --emrun && emrun ${workspaceFolderBasename}.html",
             "dependsOn" : "sjc",
             "group": "build",
             "problemMatcher": [
