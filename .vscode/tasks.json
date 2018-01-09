@@ -6,7 +6,7 @@
         {
             "label": "sjc",
             "type": "shell",
-            "command": "../sj/sjc main.sj --no-lines",
+            "command": "../sj/sjc main.sj --no-lines --c-file=main.c",
             "promptOnClose": true,
             "group": "build",
             "presentation": {
